@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*custom properties*/
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Oswald', sans-serif;
+
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #303030;
+    --clr-dark: #fff;
+    --clr-accent: #980328;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 2.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+
+}
+
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 2.5rem;
+        --fs-body: 1.125rem;
+    }
+}
