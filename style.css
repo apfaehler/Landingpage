@@ -164,7 +164,7 @@ header {
 /* Body */
 
 .intro__image {
-    box-shadow: 1em;
+    box-shadow: var(--bs);
 }
 
 .intro {
@@ -179,4 +179,5 @@ header {
     max-height: 4em;
     padding: 1em;
     border-radius: 15%;
+    box-shadow: var(--bs);
 }
