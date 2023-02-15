@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #303030;
+    --clr-light: #73767db5;
     --clr-dark: #fff;
-    --clr-accent: #980328;
+    --clr-accent: #980303;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -70,9 +70,26 @@ strong {
     outline-offset: 3px;
 }
 
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /* Typography */
-
-
 h1,
 h2,
 h3 {
@@ -110,4 +127,56 @@ h3 {
 
 .service {
     font-family: var(--ff-secondary);
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.nav__list:hover {
+    transition: all 3s;
+}
+
+.nav__link {
+    padding: 1em;
+    color: var(--clr-accent);
+}
+
+
+/* Body */
+
+.intro__image {
+    box-shadow: 1em;
+}
+
+.intro {
+    display: flex;
+    color: var(--clr-accent);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    max-width: 5em;
+    max-height: 4em;
+    padding: 1em;
+    border-radius: 15%;
 }
