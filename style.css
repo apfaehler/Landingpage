@@ -167,7 +167,7 @@ header {
 .intro__image {
     box-shadow: var(--bs);
     grid-area: img;
-    min-width: 100%;
+    min-width: 500px;
     position: relative;
     z-index: 2;
 }
