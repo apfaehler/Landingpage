@@ -167,7 +167,7 @@ header {
 .intro__image {
     box-shadow: var(--bs);
     grid-area: img;
-    min-width: 500px;
+    min-width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -186,6 +186,12 @@ header {
     max-height: 4em;
     padding: 1em;
     border-radius: 15%;
+    box-shadow: var(--bs);
+}
+
+/* What We DO */
+
+.gimg {
     box-shadow: var(--bs);
 }
 
