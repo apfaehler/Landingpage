@@ -170,7 +170,7 @@ header {
 
 .intro {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     color: var(--clr-accent);
 }
 
