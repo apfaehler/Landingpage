@@ -167,7 +167,9 @@ header {
 .intro__image {
     box-shadow: var(--bs);
     grid-area: img;
-    min-width: 500px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     position: relative;
     z-index: 2;
 }
@@ -196,11 +198,15 @@ header {
 }
 
 /* Contact us*/
+.section__title--contact {
+    display: flex;
+}
+
 .sign-up:root {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 2em;
 }
 
 textarea {
@@ -211,5 +217,14 @@ textarea {
     padding: 1em;
     border-radius: 1%;
     position: relative;
+}
 
+.btn {
+    display: flex;
+    justify-content: center;
+    max-width: 5em;
+    max-height: 4em;
+    padding: 1em;
+    border-radius: 15%;
+    box-shadow: var(--bs);
 }
