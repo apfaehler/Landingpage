@@ -166,11 +166,16 @@ header {
 
 .intro__image {
     box-shadow: var(--bs);
+    grid-area: img;
+    min-width: 500px;
+    position: relative;
+    z-index: 2;
 }
 
 .intro {
     display: flex;
     justify-content: space-between;
+    padding: .5em;
     color: var(--clr-accent);
 }
 
