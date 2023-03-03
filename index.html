@@ -42,7 +42,7 @@
                 from
                 individuals looking to give back to their community, and a percentage of each sale will be donated to a
                 charity.
-                <button class="btn"> sign up</button>
+                <a href="#signup"> <button class="btn">Sign up</button> </a>
             </p>
 
             <img src="photos/couchpotato.jpg" height="500px" width="700px" alt="headshot" class="intro__image">
@@ -52,8 +52,13 @@
             <h2 class="section__title section__title--services">What We do</h2>
             <div class="services">
                 <div class="service">
-                    <img src="photos/logo.png" height="60px" width="60px" alt="">
-                    <p>This is a setence, do you like this setence</p>
+                    <iframe src="https://giphy.com/embed/5r23ff6dhoGGJKoqq0" width="480" height="480" frameBorder="0"
+                        class="giphy-embed" allowFullScreen></iframe>
+                    <p><a href="https://giphy.com/gifs/ThankYouCoffee-cat-moving-truck-5r23ff6dhoGGJKoqq0"></a></p>
+                    <p> Want your couch out of sight and mind? We can help with that. We offer pick up services of
+                        your
+                        couch so you can say goodbye forever and part ways.
+                        Don't worry, we will give a good new home. </p>
                 </div> <!--close services-->
                 <div class="service">
                     <img src="photos/logo.png" height="60px" width="60px" alt="">
@@ -66,19 +71,26 @@
             </div> <!--close services-->
         </section>
 
-        <!-- This is just a saying-->
-        <section class="saying" id="quote">
-            <div class="thomas">
-                <p> When you plan something well there’s no need to rush.”
-
-                    THOMAS SHELBY</p>
-            </div>
-        </section>
-
         <!--Contact us-->
         <section class="sign-up" id="signup">
-            <p>Sign on up! dont be shy!</p>
-            <button class="btn"> sign up! </button>
+            <form class="email" target="_blank" action="https://formsubmit.co/secondhandsuccess321@gmail.com"
+                method="POST">
+                <div class="form-groupa">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-groupb">
+                    <textarea placeholder="Give us a summary of the couch" class="form-control" name="message" rows="10"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </form>
         </section>
 
     </body>

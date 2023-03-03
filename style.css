@@ -151,13 +151,13 @@ header {
     justify-content: space-between;
 }
 
-.nav__list:hover {
-    transition: all 3s;
-}
-
 .nav__link {
     padding: 1em;
     color: var(--clr-accent);
+}
+
+.nav__link:hover {
+    transition: all 3s;
 }
 
 
@@ -169,6 +169,7 @@ header {
 
 .intro {
     display: flex;
+    justify-content: center;
     color: var(--clr-accent);
 }
 
@@ -180,4 +181,21 @@ header {
     padding: 1em;
     border-radius: 15%;
     box-shadow: var(--bs);
+}
+
+/* Contact us*/
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1%;
+
 }
