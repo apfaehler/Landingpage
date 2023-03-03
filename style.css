@@ -111,6 +111,7 @@ h3 {
 
 .section__title {
     margin-bottom: .25em;
+    color: var(--clr-accent);
 }
 
 .section__title--intro {
@@ -188,6 +189,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 textarea {
@@ -195,7 +197,6 @@ textarea {
     width: 1000px;
     height: 300px;
     padding: 1em;
-    margin: 1em;
     border-radius: 1%;
 
 }
