@@ -13,8 +13,8 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #73767db5;
-    --clr-dark: #fff;
+    --clr-light: #e8e9eaee;
+    --clr-dark: rgb(18, 17, 17);
     --clr-accent: #980303;
 
     --fs-h1: 3rem;
@@ -161,6 +161,16 @@ header {
     transition: all 3s;
 }
 
+.intro {
+    position: relative;
+}
+
+
+.section__subtitle--intro {
+    display: inline-block;
+    position: relative;
+}
+
 
 /* Body */
 
@@ -191,18 +201,20 @@ header {
     box-shadow: var(--bs);
 }
 
-/* What We DO */
+/* What We Do */
 
 .gimg {
     box-shadow: var(--bs);
     margin-right: 1em;
 }
 
+.gimg:hover {
+    transform: scale(1.1);
+    transition: transform 500ms ease-in-out;
+}
+
 .lingo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--fs-h3)
+    margin: 1em;
 }
 
 .service {
@@ -211,9 +223,25 @@ header {
     align-items: center;
 }
 
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 9000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service+.service {
+        margin-left: 2em;
+
+    }
+}
+
 /* Contact us*/
+
 .section__title--contact {
     display: flex;
+
 }
 
 .sign-up:root {
@@ -231,6 +259,7 @@ textarea {
     padding: 1em;
     border-radius: 1%;
     position: relative;
+
 }
 
 .btn {
@@ -293,4 +322,14 @@ textarea {
 
 .social-list__link {
     padding: .5em;
+}
+
+
+/* Mobile stuff */
+@media only screen and (max-width: 800px) {
+
+    body {
+        font-size: 2em;
+    }
+
 }
