@@ -195,6 +195,20 @@ header {
 
 .gimg {
     box-shadow: var(--bs);
+    margin-right: 1em;
+}
+
+.lingo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-h3)
+}
+
+.service {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Contact us*/
