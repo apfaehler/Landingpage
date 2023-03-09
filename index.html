@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6270cfd8b7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -44,7 +46,7 @@
                     individuals looking to give back to their community, and a percentage of each sale will be donated
                     to a
                     charity.
-                    <a href="#signup"> <button class="btn">Sign up</button> </a>
+                    <a href="#signup"> <button class="btn btn-danger">Sign Up</button> </a>
                 </p>
             </div>
             <img src="photos/couchpotato.jpg" height="500px" width="700px" alt="" class="intro__image">
@@ -91,6 +93,9 @@
                             <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                         </div>
                         <div class="col">
+                            <input type="file" name="attachment" accept="image/png, image/jpeg">
+                        </div>
+                        <div class="col">
                             <input type="hidden" name="_next" value="https://apfaehler.github.io/Thank-You/">
                         </div>
                     </div>
@@ -99,10 +104,11 @@
                     <textarea placeholder="Give us a summary of the couch" class="form-control" name="message" rows="10"
                         required></textarea>
                 </div>
-                <a href="#signup"> <button class="btn">Sign up</button> </a>
+                <a href="#signup"> <button class="btn btn-danger">Sign Up</button> </a>
                 <!-- <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button> -->
             </form>
         </section>
+
 
     </body>
 
