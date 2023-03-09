@@ -72,17 +72,23 @@ strong {
 
 /* Buttons */
 .btn {
-    display: inline-block;
-    padding: .5em 2.5em;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet);
+    --bs-btn-border-color: var(--bd-violet);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
     background: var(--clr-accent);
     color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
+
+
 }
 
 .btn:hover {
@@ -191,15 +197,6 @@ header {
     color: var(--clr-accent);
 }
 
-.btn {
-    display: flex;
-    justify-content: center;
-    max-width: 5em;
-    max-height: 4em;
-    padding: 1em;
-    border-radius: 15%;
-    box-shadow: var(--bs);
-}
 
 /* What We Do */
 
@@ -249,6 +246,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 2em;
+    margin: 1em;
+}
+
+.col {
+    margin: 1em;
 }
 
 textarea {
@@ -259,17 +261,13 @@ textarea {
     padding: 1em;
     border-radius: 1%;
     position: relative;
+    margin: 1em;
 
 }
 
 .btn {
     display: flex;
-    justify-content: center;
-    max-width: 5em;
-    max-height: 4em;
-    padding: 1em;
-    border-radius: 15%;
-    box-shadow: var(--bs);
+    margin: 1em;
 }
 
 
@@ -278,7 +276,7 @@ textarea {
 .footer {
     background: #111;
     color: var(--clr-accent);
-    padding: 2.5em 0;
+    padding: 1.5em 0;
     text-align: center;
     font-size: var(--fs-h3);
 }
