@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+
 }
 
 /*custom properties*/
@@ -180,13 +181,12 @@ header {
 
 /* Body */
 
-.intro__image {
+.intro-img {
     box-shadow: var(--bs);
-    grid-area: img;
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    position: relative;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
     z-index: 2;
 }
 
@@ -246,11 +246,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 2em;
-    margin: 1em;
+    margin: 5px;
 }
 
 .col {
-    margin: 1em;
+    margin: 5px;
 }
 
 textarea {
@@ -261,13 +261,13 @@ textarea {
     padding: 1em;
     border-radius: 1%;
     position: relative;
-    margin: 1em;
+    margin: 5px;
 
 }
 
 .btn {
     display: flex;
-    margin: 1em;
+    margin: 5px;
 }
 
 
@@ -324,10 +324,12 @@ textarea {
 
 
 /* Mobile stuff */
-@media only screen and (max-width: 900px) {
-
+@media only screen and (max-width: 480px) {
     body {
-        font-size: 1em;
+        font-size: 20px;
     }
 
+    .intro-img {
+        display: none;
+    }
 }
