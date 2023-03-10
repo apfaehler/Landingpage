@@ -326,7 +326,7 @@ textarea {
 /* Mobile stuff */
 @media only screen and (max-width: 480px) {
     body {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .intro-img {
